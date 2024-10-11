@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-100">
 
-    <nav class="bg-hijau-tua p-4">
+    <nav class="bg-gradient-to-l from-hijau to-hijau-tua p-4">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo dan Judul -->
             <div class="flex items-center space-x-4">
@@ -26,7 +26,7 @@
 
     <div class="flex">
         <!-- Sidebar -->
-        <aside class="w-1/6 bg bg-hijau h-screen p-6">
+        <aside class="w-1/6 bg-[url('https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?cs=srgb&dl=pexels-pixabay-358457.jpg&fm=jpg/1200x800')] bg-center bg-cover h-screen p-6">
             <ul class="space-y-4">
                 <li><a href="#" class="text-gray-300 hover:text-white block">Dashboard</a></li>
                 <li><a href="#" class="text-gray-300 hover:text-white block">Users</a></li>
@@ -36,20 +36,41 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="w-3/4 p-6">
+        <main class="flex-grow p-6">
             <h2 class="text-3xl font-bold text-gray-800">Welcome to the Dashboard</h2>
             <p class="mt-4 text-gray-600">This is the main content area where you can see information and manage your system.</p>
+            
+            <!-- bagian content menggunakan grid -->
+            <div class="grid grid-cols-4 gap-4 mt-5">
+                <!-- bagian 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800">Section 1</h3>
+                    <p class="mt-2 text-gray-600">Content for section 1 goes here.</p>
+                </div>
 
-            <!-- Section 1 -->
-            <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold text-gray-800">Section 1</h3>
-                <p class="mt-2 text-gray-600">Content for section 1 goes here.</p>
-            </div>
+                <!-- bagian 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800">Section 2</h3>
+                    <p class="mt-2 text-gray-600">Content for section 2 goes here.</p>
+                </div>
 
-            <!-- Section 2 -->
-            <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold text-gray-800">Section 2</h3>
-                <p class="mt-2 text-gray-600">Content for section 2 goes here.</p>
+                <!-- bagian 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800">Section 3</h3>
+                    <p class="mt-2 text-gray-600">Content for section 3 goes here.</p>
+                </div>
+
+                <!-- bagian 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800">Section 4</h3>
+                    <p class="mt-2 text-gray-600">Content for section 4 goes here.</p>
+                </div>
+
+                <!-- bagian 5, ditempatkan di bawah bagian 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800">Section 5</h3>
+                    <p class="mt-2 text-gray-600">Content for section 5 goes here.</p>
+                </div>
             </div>
         </main>
     </div>
